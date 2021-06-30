@@ -2,8 +2,6 @@ const express = require('express');
 const path = require('path');
 const { ApolloServer } = require('apollo-server-express');
 
-// const routes = require('./routes');
-
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
@@ -29,7 +27,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
-// app.use(routes);
 
 db.once('open', () => {
   app.listen(PORT, () => {
