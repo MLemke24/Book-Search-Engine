@@ -9,13 +9,13 @@ me {
     email
     savedBooks {
         bookId
-        authors
+        title
         description
+        authors
         image
         link
-        title
     }
 
-}
+  }
 }
 `
