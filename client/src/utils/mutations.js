@@ -29,11 +29,9 @@ mutation saveBook($bookId: ID!, $authors: [String], $description: String, $title
         email
         savedBooks {
             bookId
-            authors
-            description
             title
-            
-            
+            description
+            authors
         }
     }
 }
